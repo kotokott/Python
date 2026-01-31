@@ -1,16 +1,38 @@
-# This is a sample Python script.
+simpleList = [3, 7, 4, 2]
+simpleList.append(4)
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+anotherList = [3, True, 'Vitya', 2.0]
 
+print(simpleList[2])
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+print(simpleList[-1]) # последний элемент списка
 
+print(simpleList[0:2]) #срез - sublist
 
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
+print(simpleList[:3]) # срез до индекса 3
+print(simpleList[1:]) # с индекса 1
 
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+simpleList[1] = 'fish'
+print(simpleList)
+
+print(simpleList.index('fish'))
+# print(simpleList.index('fish', 3)) поиск, начиная с индекса 3
+
+simpleList.remove('fish')
+simpleList.sort()
+print(simpleList)
+simpleList.sort(reverse=True)
+print(simpleList)
+
+names = ["Стив", "Рейчел", "Майкл", "Адам", "Джессика", "Лестер"] # А-Я
+names.sort()
+print(names)
+
+print(simpleList.pop(3)) # удаление по индексу + return элемента
+
+simpleList.extend([12, 45]) # можно еще с помощью +
+print(simpleList)
+
+simpleList.insert(1, 5)
+print(simpleList)
+
